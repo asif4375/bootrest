@@ -7,7 +7,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/api")
 public class WelcomeController {
-    @GetMapping("/message")
+	int count;
+        @GetMapping("/message")
 	public String getMessage() {
     	return "welcome...";
     }
